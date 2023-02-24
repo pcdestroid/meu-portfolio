@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    background-color: black;
+}
+
+.font-exo {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.font-space-mono {
+    font-family: 'Space Mono', monospace;
+}
+
+.center {
+
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+
+}
+
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+button:hover {
+    transform: scale(1.2);
+}
+
+p,
+h1 {
+    transition: all 1.2s ease-in-out;
+}
+
+p:hover,
+h1:hover {
+    transform: scale(1.1);
+}
