@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 function AudioPlayer({ src }) {
     const [audio, setAudio] = useState(null);
-    const [volume, setVolume] = useState(0.2);
+    const [volume, setVolume] = useState(0.5);
 
     useEffect(() => {
         const newAudio = new Audio(src);
@@ -33,7 +33,7 @@ function AudioPlayer({ src }) {
 
     return (
         <>
-            <div class="music-control">
+            <div className="music-control">
                 <input
                     className="volume-control"
                     type="range"
@@ -51,7 +51,7 @@ function AudioPlayer({ src }) {
 function MusicHome({ children }) {
     return (
         <>
-            <AudioPlayer src="/music/music.mp3" />
+            <AudioPlayer src="/music/music.aac" />
             {children}
         </>
     );

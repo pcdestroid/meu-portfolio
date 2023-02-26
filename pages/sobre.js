@@ -4,7 +4,9 @@ function Sobre() {
     return (<div>
         <Headpage />
         <Menu />
-        <h1 class="font-exo">Sobre</h1>
+        <article className="font-exo">
+            <p>Sobre</p>
+        </article>
     </div>)
 }
 

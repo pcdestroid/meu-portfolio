@@ -4,7 +4,9 @@ function Contato() {
     return (<div>
         <Headpage />
         <Menu />
-        <h1 class="font-exo">Contato</h1>
+        <article className="font-exo">
+            <p>Contato</p>
+        </article>
 
     </div>)
 }

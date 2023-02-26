@@ -3,7 +3,11 @@ function Projetos() {
     return (<div>
         <Headpage />
         <Menu />
-        <h1 class="font-exo">Projetos</h1>
+
+        <article className="font-exo">
+            <p>Projetos</p>
+        </article>
+
 
     </div>)
 }
