@@ -1,5 +1,4 @@
 import { Headpage, Menu } from '../global';
-
 function Projetos() {
     return (<div>
         <Headpage />

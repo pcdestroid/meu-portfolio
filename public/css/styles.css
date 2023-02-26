@@ -12,6 +12,19 @@ nav {
     justify-content: center;
 }
 
+.music-control {
+    padding: 15px;
+
+}
+
+input[type="range"] {
+    height: 4px;
+    border-radius: 4px;
+    filter: hue-rotate(140deg);
+    margin: 15px;
+    
+}
+
 main {
     text-align: center;
 }
@@ -64,7 +77,7 @@ a {
 
 .fundo-logo-git path {
     fill: white;
-    top: 10px;
+    
 }
 
 .font-exo {
