@@ -1,3 +1,4 @@
+/* All */
 * {
     padding: 0;
     margin: 0;
@@ -6,77 +7,98 @@
     user-select: none;
 }
 
-nav {
-    position: relative;
-    z-index: 5;
+/* Menu */
+.menu {
     display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
     height: 50px;
     align-items: center;
     justify-content: center;
     color: white;
     font-family: 'Exo 2', sans-serif;
     font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.5);
-    min-height: 120px;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-height: 200px;
     min-width: 600px;
     margin-bottom: 150px;
     transition: all 5s ease-in-out;
 }
 
-nav:hover {
+.menu:hover {
     transform: scale(1.2);
 }
 
-.music-control {
-    padding: 15px;
 
-}
-
-canvas {
-    z-index: 1;
-    position: absolute;
-    top: -40px;
-}
-
-input[type="range"] {
+/* Controle de música */
+.volume-control {
     height: 4px;
     border-radius: 4px;
     margin: 15px;
     transition: all 1s ease-in-out;
 }
 
-input[type="range"]:hover {
+.volume-control:hover {
     transform: scale(1.2);
     filter: hue-rotate(80deg);
 }
 
+.music-control {
+    padding: 15px;
+}
 
-article {
-    margin-top: 50px;
-    position: relative;
-    z-index: 4;
-    text-align: center;
-    z-index: 5;
+
+/* Fim menu */
+
+.texto-central {
+    color: white;
     display: block;
-    align-self: auto;
-    align-items: center;
-    justify-content: center;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 40%;
+    z-index: 4;
     padding-top: 10px;
     padding-bottom: 10px;
-    min-width: 600px;
-    transition: all 10s ease-in-out;
+    /* min-width: 600px; */
+    transition: all 1s ease-in-out;
+    box-sizing: border-box;
+    overflow: auto;
 }
 
-article:hover {
-    transform: scale(1.5);
+.texto-final {
+    color: white;
+    display: block;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 80%;
+    z-index: 3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* min-width: 600px; */
+    transition: all 1.5s ease-in-out;
+    box-sizing: border-box;
+    overflow: auto;
 }
+
+.texto-final:hover {
+    transform: scale(1.2);
+}
+
+.texto-central:hover {
+    transform: scale(1.2);
+}
+
 
 footer {
     color: white;
+    display: block;
+    position: absolute;
     font-family: sans-serif;
     font-size: 12px;
     background-color: black;
-    position: absolute;
     z-index: 5;
     /* define a posição como absoluta */
     bottom: 0;
@@ -96,9 +118,10 @@ ul {
 }
 
 li {
-    margin-right: 20px;
+    display: flex;
+    margin-right: 30px;
     list-style: none;
-    transition: all 1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 li:hover {
@@ -119,7 +142,7 @@ a {
 
 .fundo-logo-git {
     fill: white;
-    transition: all 1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .fundo-logo-git:hover {
@@ -127,23 +150,25 @@ a {
 }
 
 .font-exo {
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
     font-family: 'Exo 2', sans-serif;
-    font-size: 45px;
+    font-size: 3vw;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .font-exo-small {
-    margin-top: 350px;
-    color: rgb(255, 255, 255);
     font-family: 'Exo 2', sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     background-color: rgba(0, 0, 0, 0.5);
-    bottom: 0;
 }
 
 .font-space-mono {
     color: white;
     font-family: 'Space Mono', monospace, sans-serif;
+}
+
+/* Plano de fundo */
+canvas {
+    z-index: 1;
+    position: fixed;
+    top: -40px;
 }

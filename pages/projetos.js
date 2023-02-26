@@ -1,4 +1,4 @@
-import { Headpage, Menu } from '../global';
+import { Headpage, Menu, Animation } from '../global';
 function Projetos() {
     return (<div>
         <Headpage />
@@ -8,7 +8,7 @@ function Projetos() {
             <p>Projetos</p>
         </article>
 
-
+        {Animation()}
     </div>)
 }
 

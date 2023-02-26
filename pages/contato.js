@@ -1,4 +1,4 @@
-import { Headpage, Menu } from '../global';
+import { Headpage, Menu, Animation } from '../global';
 
 function Contato() {
     return (<div>
@@ -7,7 +7,7 @@ function Contato() {
         <article className="font-exo">
             <p>Contato</p>
         </article>
-
+        {Animation()}
     </div>)
 }
 

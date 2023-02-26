@@ -1,4 +1,4 @@
-import { Headpage, Menu } from '../global';
+import { Headpage, Menu, Animation } from '../global';
 
 function Sobre() {
     return (<div>
@@ -7,6 +7,7 @@ function Sobre() {
         <article className="font-exo">
             <p>Sobre</p>
         </article>
+        {Animation()}
     </div>)
 }
 
